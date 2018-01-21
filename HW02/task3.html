@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Web Dev HW02 Task3 </title>
+    <style>
+		h1 {
+			text-align: center;
+		}
+        div.colbox { display: flex; }
+     	div.col1 { 
+			width: 33.33%; 
+		 	float: left;
+		}
+     	div.col2 { 
+			width: 66.67%;
+			float: right;
+		}
+    </style>
+</head>
+<body>
+	<h1> HW02 Task3 </h1>
+    <div class="colbox">
+		<div class="col1">
+			<a href=# id = "loremIpsum" > Lorem Ipsum </a> </br>
+			<a href=# id = "99BottlesOfBeer" > 99 Bottles of Beer </a> </br>
+			<a href=# id = "LastThing" > Last thing </a> </br>
+		</div>
+		<div class="col2" id = "column2">
+		<!-- Attribution for content goes to: "https://en.wikipedia.org/wiki/Lorem_ipsum" -->
+			<p id = "p1"> 
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer malesuada nunc vitae est elementum auctor. 
+				In ac nibh non dolor condimentum finibus pulvinar eu ex. Vestibulum ante ipsum primis in faucibus orci 
+				luctus et ultrices posuere cubilia Curae; Nullam elementum ante lacus, eu cursus sapien pharetra non. 
+				Interdum et malesuada fames ac ante ipsum primis in faucibus. Nulla facilisi. Pellentesque sit amet metus 
+				eget velit finibus rhoncus et vel odio. Morbi id tempor augue, at mattis augue. Aenean quam est, efficitur 
+				in ex non, congue efficitur metus.
+			</p>
+			<p id = "p2">
+				Curabitur mauris arcu, luctus non augue quis, pellentesque varius erat. Vivamus blandit dui in vehicula
+				fermentum. Curabitur ornare sollicitudin purus a ullamcorper. Vivamus id dolor eu tellus venenatis malesuada 
+				nec in urna. Vivamus fringilla felis nec enim auctor, rhoncus condimentum magna viverra. Ut maximus sem turpis,
+				fermentum suscipit lorem lobortis non. Morbi lobortis condimentum elit, in dapibus turpis pretium vel. Mauris 
+				vel tempor est. Morbi et nisl vitae risus molestie dignissim sed eu sem. Aenean accumsan nisl imperdiet neque
+				pellentesque auctor. Curabitur eleifend neque sed tellus luctus, eu placerat turpis rhoncus. Aliquam eu justo
+				id lacus facilisis efficitur in vitae neque.
+			</p>
+			<p id = "p3">
+				Donec vel mi massa. Morbi tincidunt erat dolor, eu interdum risus tempus quis. Praesent justo urna, tincidunt 
+				eu risus ut, fringilla placerat felis. Donec dictum elit nisl, et sollicitudin enim ultricies finibus. Donec 
+				semper lacus id justo posuere, et efficitur ante dignissim. In hac habitasse platea dictumst. Cras ullamcorper 
+				venenatis sollicitudin. Quisque et tincidunt felis, ac eleifend quam. Nam varius hendrerit cursus. Nunc eget velit 
+				lobortis dui tempus efficitur ut a nunc. Proin sit amet porttitor enim, convallis ultricies tortor.
+			</p>
+			<p id = "p4">
+				Phasellus rutrum leo eget dapibus pretium. Interdum et malesuada fames ac ante ipsum primis in faucibus. Donec 
+				id pretium augue. Nullam tempus mi vitae elit placerat, ac semper ipsum aliquam. Suspendisse lacinia laoreet dapibus. 
+				Maecenas volutpat orci nisi, quis tempor enim sollicitudin vitae. Etiam sit amet neque a turpis hendrerit feugiat.
+			</p>
+		</div>
+   </div>
+   <script>
+	   (function () {
+			var lorem = document.getElementById("loremIpsum");
+			lorem.addEventListener("click", function(){
+				document.getElementById("p1").innerText = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer malesuada nunc vitae est elementum auctor. In ac nibh non dolor condimentum finibus pulvinar eu ex. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nullam elementum ante lacus, eu cursus sapien pharetra non. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nulla facilisi. Pellentesque sit amet metus eget velit finibus rhoncus et vel odio. Morbi id tempor augue, at mattis augue. Aenean quam est, efficitur in ex non, congue efficitur metus.";
+				document.getElementById("p2").innerText = "Curabitur mauris arcu, luctus non augue quis, pellentesque varius erat. Vivamus blandit dui in vehicula fermentum. Curabitur ornare sollicitudin purus a ullamcorper. Vivamus id dolor eu tellus venenatis malesuada nec in urna. Vivamus fringilla felis nec enim auctor, rhoncus condimentum magna viverra. Ut maximus sem turpis, fermentum suscipit lorem lobortis non. Morbi lobortis condimentum elit, in dapibus turpis pretium vel. Mauris vel tempor est. Morbi et nisl vitae risus molestie dignissim sed eu sem. Aenean accumsan nisl imperdiet neque pellentesque auctor. Curabitur eleifend neque sed tellus luctus, eu placerat turpis rhoncus. Aliquam eu justo id lacus facilisis efficitur in vitae neque.";
+				document.getElementById("p3").innerText = "Donec vel mi massa. Morbi tincidunt erat dolor, eu interdum risus tempus quis. Praesent justo urna, tincidunt eu risus ut, fringilla placerat felis. Donec dictum elit nisl, et sollicitudin enim ultricies finibus. Donec semper lacus id justo posuere, et efficitur ante dignissim. In hac habitasse platea dictumst. Cras ullamcorper venenatis sollicitudin. Quisque et tincidunt felis, ac eleifend quam. Nam varius hendrerit cursus. Nunc eget velit lobortis dui tempus efficitur ut a nunc. Proin sit amet porttitor enim, convallis ultricies tortor.";
+				document.getElementById("p4").innerText = "Phasellus rutrum leo eget dapibus pretium. Interdum et malesuada fames ac ante ipsum primis in faucibus. Donec id pretium augue. Nullam tempus mi vitae elit placerat, ac semper ipsum aliquam. Suspendisse lacinia laoreet dapibus. Maecenas volutpat orci nisi, quis tempor enim sollicitudin vitae. Etiam sit amet neque a turpis hendrerit feugiat.";
+			});
+			
+
+			var bottles = document.getElementById("99BottlesOfBeer");
+			bottles.addEventListener("click", function(){		 
+				document.getElementById("p1").innerText = "99 bottles of beer on the wall, 99 bottles of beer. Take one down, pass it around, 98 bottles of beer on the wall...";
+				document.getElementById("p2").innerText = "98 bottles of beer on the wall, 98 bottles of beer. Take one down, pass it around, 97 bottles of beer on the wall...";
+				document.getElementById("p3").innerText = "97 bottles of beer on the wall, 97 bottles of beer. Take one down, pass it around, 96 bottles of beer on the wall...";
+				document.getElementById("p4").innerText = "96 bottles of beer on the wall, 96 bottles of beer. Take one down, pass it around, 95 bottles of beer on the wall...";
+			});
+
+			var last = document.getElementById("LastThing");
+			last.addEventListener("click", function(){
+				document.getElementById("p1").innerText = "This is the third thing.";
+				document.getElementById("p2").innerText = " ";
+				document.getElementById("p3").innerText = " ";
+				document.getElementById("p4").innerText = " ";
+			});
+		})();
+   </script>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title> Web Dev HW02 Task2 </title>
+  </head>
+  <body>
+    <h1 id="num"></h1>
+    <p> <button id="btn"> Current Value </button> </p>
+    <p> <button id="incre"> Increment </button> </p>
+    <p> <button id="addp"> Add para </button> </p>
+    <script>
+      (function () {
+        "use strict";
+        var i = 10;
+        document.getElementById("num").innerText = i;
+      
+        var btn = document.getElementById("btn");
+		    btn.addEventListener("click", function(){ alert(i); });
+        
+        var increment = document.getElementById("incre");
+        increment.addEventListener("click", function (){
+          //alert(i);
+          i = ++i;
+          //alert(i);
+          document.getElementById("num").innerText = i;
+        });
+
+        var addp = document.getElementById("addp");
+        var ptag = 1;
+        addp.addEventListener("click", function () {
+          var para = document.createElement("p");
+          para.innerHTML = i;
+          //para.setAttribute("id","newpara");
+          //para.style.position = "absolute";
+          //para.style.bottom = "0";
+          document.body.appendChild(para);
+          //alert(i);
+          //document.getElementById("newpara").innerHTML = i;
+          
+
+        });
+        
+      })();
+    </script>
+  </body>
+</html>
