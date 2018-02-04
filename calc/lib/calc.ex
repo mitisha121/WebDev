@@ -182,7 +182,7 @@ defmodule Calc do
   #Returns : A string which is the result of evaluating the input 
   #          arithmetic expression
   def main do
-    ae = IO.gets(" ")
+    ae = IO.gets(">")
     |> String.trim
     Regex.replace(~r/\s/, ae, "")
     |> eval()
